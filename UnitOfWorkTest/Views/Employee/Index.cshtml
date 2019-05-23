@@ -1,0 +1,27 @@
+﻿@model IEnumerable<UnitOfWorkTest.DAL.DBModel.Table_Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var i in Model)
+        {
+        <tr>
+            <td>@i.eId</td>
+            <td>@i.eName</td>
+            <td>@i.eSalary</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
